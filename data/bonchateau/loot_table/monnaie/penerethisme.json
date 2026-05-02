@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "function": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{bonchateau_monnaie:\"penerethisme\",display:{Name:'{\"text\":\"Penerethisme\"}',Lore:['{\"text\":\"Monnaie\"}']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

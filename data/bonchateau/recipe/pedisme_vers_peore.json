@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:large_amethyst_bud"
+    }
+  ],
+  "result": {
+    "id": "minecraft:medium_amethyst_bud",
+    "count": 9,
+    "components": {
+      "minecraft:custom_name": "{\"text\":\"Peore\",\"color\":\"light_purple\",\"italic\":false}",
+      "minecraft:lore": ["{\"text\":\"Monnaie\",\"color\":\"gray\",\"italic\":false}"],
+      "minecraft:custom_data": {
+        "bonchateau_monnaie": "peore",
+        "bonchateau_valeur": 1
+      }
+    }
+  }
+}

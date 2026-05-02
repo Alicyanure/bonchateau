@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:notice",
+  "title": {"text": "Livre de Quêtes", "color": "gold", "bold": true},
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {"text": "Livre de Quêtes"}
+  },
+  "action": {
+    "label": {"text": "Fermer"},
+    "action": {"type": "minecraft:close"}
+  }
+}

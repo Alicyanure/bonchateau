@@ -1,0 +1,27 @@
+| Test                                     | Objectif                                                 | Commande / Action                                                                                     | Résultat attendu                                                                                                                  |             |             |
+| ---------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----------- |
+| **T1 – Chargement datapack**             | Vérifier que le datapack se charge correctement          | `/reload`                                                                                             | Message tellraw “Bonchateau 1.21 … Datapack (re)loaded !” s’affiche ; scoreboards `argent_banque`, `jour`, `lieu`, `classe` créés |             |             |
+| **T2 – Vérifier scoreboards**            | S’assurer que tous les scoreboards sont initialisés      | `/scoreboard objectives list`                                                                         | Les 4 scoreboards sont présents                                                                                                   |             |             |
+| **T3 – Spawn PNJ banquier**              | Créer un PNJ pour tester interactions                    | `/summon villager ~ ~ ~ {CustomName:'{"text":"Banquier"}',NoAI:1b,Invulnerable:1b,Tags:["banquier"]}` | PNJ apparaît, immobile, invincible, avec tag `banquier`                                                                           |             |             |
+| **T4 – Dépôt avec item**                 | Tester le dépôt via amethyst_shard                       | Tenir 1 `amethyst_shard` et exécuter `/function bonchateau:banque/detect_interaction`                 | - Item retiré de la main (-1) <br> - Score `argent_banque` +1 <br> - Message actionbar “💰 Dépôt effectué (+1)”                   |             |             |
+| **T5 – Retrait avec solde ≥ 1**          | Tester retrait d’1 unité                                 | Main vide, `/function bonchateau:banque/detect_interaction`                                           | - `amethyst_shard` ajouté à la main (+1) <br> - Score `argent_banque` -1 <br> - Message actionbar “💰 Retrait effectué (-1)”      |             |             |
+| **T6 – Retrait avec solde = 0**          | Vérifier blocage retrait                                 | Solde = 0, main vide, `/function bonchateau:banque/detect_interaction`                                | Message actionbar “❌ Solde insuffisant”, solde reste à 0                                                                          |             |             |
+| **T7 – HUD actionbar**                   | Vérifier que HUD affiche correctement argent, jour, lieu | Joueur présent, tick automatique                                                                      | Actionbar visible chaque tick : 💰 Argent : X                                                                                     | 📅 Jour : Y | 📍 Lieu : Z |
+| **T8 – Interaction rapide / spam click** | Tester stabilité du système                              | Répéter dépôt/retrait plusieurs fois rapidement                                                       | Solde correct, aucun crash, messages actionbar corrects                                                                           |             |             |
+| **T9 – Multi-joueur**                    | Vérifier que chaque joueur a son solde                   | Deux joueurs, chacun interagit avec le banquier                                                       | Les scores `argent_banque` sont indépendants, HUD correct pour chaque joueur                                                      |             |             |
+| **T10 – Détection item unique**          | Vérifier que dépôt ne se fait qu’avec item exact         | Tenir un `amethyst_shard` avec tag personnalisé différent                                             | Dépôt non déclenché si item incorrect                                                                                             |             |             |
+| **T11 – Reset scoreboards**              | Vérifier suppression / recréation                        | `/scoreboard objectives remove argent_banque` puis `/reload`                                          | Scoreboard recréé, HUD fonctionnel                                                                                                |             |             |
+
+Commandes utiles :
+
+Spawn PNJ
+/summon villager ~ ~ ~ {CustomName:'{"text":"Banquier"}',NoAI:1b,Invulnerable:1b,Tags:["banquier"]}
+
+vérifier le scoreboard du joueur
+/scoreboard players list @s
+
+Forcer interaction avec le banquier (pour test) :
+/function bonchateau:banque/detect_interaction
+
+Give pedisme
+/give @p minecraft:medium_amethyst_bud{display:{Name:'{"text":"Pedisme"}'}} 1

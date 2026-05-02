@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:medium_amethyst_bud"
+    }
+  },
+  "result": {
+    "id": "minecraft:large_amethyst_bud",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": "{\"text\":\"Pedisme\",\"color\":\"light_purple\",\"italic\":false}",
+      "minecraft:lore": ["{\"text\":\"Monnaie\",\"color\":\"gray\",\"italic\":false}"],
+      "minecraft:custom_data": {
+        "bonchateau_monnaie": "pedisme",
+        "bonchateau_valeur": 9
+      }
+    }
+  }
+}

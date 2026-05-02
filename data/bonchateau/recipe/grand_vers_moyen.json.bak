@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_block",
+      "nbt": "{display:{Name:'{\"text\":\"Penausme\"}',Lore:['{\"text\":\"Monnaie\"}']}}"
+    }
+  ],
+  "result": {
+    "item": "minecraft:amethyst_shard",
+    "count": 9,
+    "nbt": "{display:{Name:'{\"text\":\"Pedisme\"}',Lore:['{\"text\":\"Monnaie\"}']}}"
+  }
+}

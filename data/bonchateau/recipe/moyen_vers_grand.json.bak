@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:amethyst_shard",
+      "nbt": "{display:{Name:'{\"text\":\"Pert\"}',Lore:['{\"text\":\"Monnaie\"}']}}"
+    }
+  },
+  "result": {
+    "item": "minecraft:amethyst_shard",
+    "count": 1,
+    "nbt": "{display:{Name:'{\"text\":\"Peore\"}',Lore:['{\"text\":\"Monnaie\"}']}}"
+  }
+}

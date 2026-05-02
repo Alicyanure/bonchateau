@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:small_amethyst_bud",
+          "function": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{bonchateau_monnaie:\"pert\"}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Pert",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Monnaie",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

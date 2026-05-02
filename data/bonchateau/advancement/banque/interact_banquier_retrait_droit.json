@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "frappe": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:villager",
+          "nbt": "{Tags:[\"banquier_retrait\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bonchateau:banque/detect_interaction_retrait_droit"
+  }
+}

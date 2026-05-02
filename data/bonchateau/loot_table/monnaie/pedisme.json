@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:large_amethyst_bud",
+          "function": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{bonchateau_monnaie:\"pedisme\",display:{Name:'{\"text\":\"Pedisme\"}',Lore:['{\"text\":\"Monnaie\"}']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
