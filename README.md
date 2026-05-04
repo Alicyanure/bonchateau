@@ -1,5 +1,7 @@
 # Bonchateau
 
+/!\ A modifier avant de rendre publique /!\
+
 Générer clef ssh : ssh-keygen -t rsa -b 4096 -C "PC-fixe-Mathilde"
 
 Lire clef : cat ~/.ssh/id_rsa.pub 
