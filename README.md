@@ -23,6 +23,8 @@ Préparer la sauvegarde à envoyer : git commit -m "le commentaire"
 
 Envoyer la sauvegarde  (se positionner sur la bonne branche) : git push (après un "commit --amend") ajouter : --force 
 
+Envoyer la sauvegarde sur une branche secondaire : git push --set-upstream origin "nom_branche"
+
 Récupérer la sauvegarde (se positionner sur la bonne branche) : git pull
 
 Créer une nouvelle branche et se positionner dessus : git co -b "nom_branche"    (co = check out)
