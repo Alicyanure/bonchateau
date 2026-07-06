@@ -1,4 +1,20 @@
-# Bonchateau
+# Bonchateau - Minecraft 1.21
+
+
+#### Notes de version 1.21 ####
+
+Dans cette branche compatible en 1.21, on trouve les modules suivants :
+# PNJ
+  ->  Vous pouvez aire spawn des pnj customs à partir d'un ichier csv. Le fichier est simplifié et vous permet une customisation très poussée ! Par défaut, les pnj de Bonchateau sont créés par ce module.
+# BANQUE
+  ->  Des pnj banquiers peuvent spawnés. Ils permettent d'intéragir avec votre banque ! Vous pouvez déposer vos améthistes dans votre coffre numérique ou retirer de l'argent !
+# MONNAIE
+  ->  La monnaie de Bonchateau utilise des amétistes renomées (petite amétiste = pert = 10 centimes, moyenne amétiste = peore = 1 euro...) Les pnj savent les manipuler en tant qu'entités et les joueurs peuvent les convertirs eux-mêmes !
+
+Prochains modules à venir : système de quêtes en intéraction avec les pnj.
+
+
+#### Notes GitHub ####
 
 Générer clef ssh : ssh-keygen -t rsa -b 4096 -C "PC-fixe-Mathilde"
 
