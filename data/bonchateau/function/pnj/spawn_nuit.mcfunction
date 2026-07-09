@@ -1,7 +1,7 @@
 # ============================================
 # BONCHATEAU - Spawn PNJ (NUIT)
 # Généré automatiquement depuis bc_pnj_import.csv
-# NE PAS MODIFIER MANUELLEMENT
+# NE PAS MODIFIER MANUELLEMENT TEST
 # ============================================
 # ⚠️ La nuit, les PNJ n'ont AUCUN trade (Offers vides)
 
@@ -54,7 +54,7 @@ summon minecraft:villager 289 110 -261 {Tags:["pnj_bonchateau","pnj_0016","pnj_a
 summon minecraft:villager 324 113 -222 {Tags:["pnj_bonchateau","pnj_0017","pnj_adulte"],CustomName:'{"text":"Lucas Lagarde","color":"white"}',CustomNameVisible:0b,NoAI:0b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Rotation:[0f,0f],VillagerData:{profession:"minecraft:cartographer",level:5,type:"minecraft:snow"},Offers:{Recipes:[]}}
 
 # BANQUIER RETRAIT : Célia Lagarde (double)
-summon minecraft:villager 324.0 113 -223.0 {Tags:["pnj_bonchateau","pnj_0018","pnj_adulte"],CustomName:'{"text":"Célia Lagarde","color":"white","bold":true}',CustomNameVisible:0b,NoAI:0b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,VillagerData:{profession:"minecraft:cartographer",level:5,type:"minecraft:snow"},Offers:{Recipes:[]}}
+summon minecraft:villager 324.0 113 -223.0 {Tags:["pnj_bonchateau","pnj_0018","pnj_adulte"],CustomName:'{"text":"Célia Lagarde","color":"white","bold":false}',CustomNameVisible:0b,NoAI:0b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,VillagerData:{profession:"minecraft:cartographer",level:5,type:"minecraft:snow"},Offers:{Recipes:[]}}
 
 # PNJ : Victoire Popelin (0019)
 summon minecraft:villager 270 118 -225 {Tags:["pnj_bonchateau","pnj_0019","pnj_adulte"],CustomName:'{"text":"Victoire Popelin","color":"white"}',CustomNameVisible:0b,NoAI:0b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Rotation:[0f,0f],VillagerData:{profession:"minecraft:farmer",level:5,type:"minecraft:snow"},Offers:{Recipes:[]}}
